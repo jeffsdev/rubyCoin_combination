@@ -16,7 +16,7 @@ class Fixnum
 
   def coins_to_words(total_coins)
     test = []
-    coins = {0 => "Quarter", 1 => "dime", 2 => "nickel", 3 => "penny" }
+    coins = {0 => "quarter", 1 => "dime", 2 => "nickel", 3 => "penny" }
     total_coins.each_with_index do |coin, index|
       unless coin == 0
         coin > 1 ? amount = coins.fetch(index).pluralize : amount = coins.fetch(index)

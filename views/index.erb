@@ -1,0 +1,11 @@
+<%= erb :head %>
+<h1>Change to words</h1>
+<form action="/change_to_words">
+  <div class="form-group">
+    <label>Enter an amount:</label>
+    <input id="coin_combo" type="text" class="form-control" name="coin_combo">
+  </div>
+  <button type="submit" class="btn-success">Submit</button>
+</form>
+<h2>Your change is...</h2>
+<p><%= @change_words_string %></p>
