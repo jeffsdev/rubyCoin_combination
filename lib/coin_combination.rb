@@ -23,6 +23,6 @@ class Fixnum
         test << "#{coin} #{amount} "
       end
     end
-    return test.join
+    return test.join.strip
   end
 end
